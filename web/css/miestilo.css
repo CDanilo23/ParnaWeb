@@ -1,0 +1,246 @@
+
+.logo{
+    position: absolute;
+    z-index: 5000;
+    padding: 10px;
+}
+
+.logo a{
+    font-size: 32px;
+    font-weight: bold;
+    color: #fff;
+    text-decoration: none;
+}
+
+.menu-nav{
+    float: right;
+}
+
+#menu-s{
+    background-color: #007EFF;
+    width: 100%;
+    height: 60px;
+    margin: 0px;
+}
+
+.menu>ul>li{
+    float: left;
+    margin-left: 15px;
+    font-size: 18px;
+    position: relative;
+    line-height: 20px;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-right: 10px;
+}
+
+.menu li{
+    color: #fff;
+    list-style-type: none;
+}
+
+.menu a{
+    text-decoration: none;
+    color: #fff;
+    margin-left: 15px;
+    line-height: 20px;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-right: 10px;
+}
+
+.menu li>a:hover, li>a:focus{
+
+    background-color: #FAFAFA;
+    border-radius: 10px;
+    height: 30px;
+    color: #01A9DB;
+    margin-left: 15px;
+    margin-right: 10px;
+}
+
+
+.head-image img{
+    width: 100%;
+    height: 300px;
+    -webkit-border-radius: 80px;
+    -moz-border-radius: 80px;
+    border-radius: 80px;
+}
+
+.fila{
+    width: 100%;
+}
+
+.contenido{
+    width: 70%;
+    height: auto;
+    float: left;
+    margin-right: 20px
+}
+
+.sidebar{
+    width: 27%;
+    height: auto;
+    float: right;
+
+}
+
+.sidebar p{
+    text-align: justify;
+}
+
+.art p{
+    text-align: justify;
+}
+
+
+.footer{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    width: 100%;
+    float: left;
+    background-color: rgba(30, 78, 27, 0.85);
+}
+
+.footer p{
+    padding: 20px;
+    font-size: 20px;
+    color: #fff;
+}
+
+.footer a{
+    text-decoration: none;
+    color: #D7DF01;
+    font-weight: bold;
+    text-shadow: 0px 0px 0.5px #fff;
+}
+
+.footer a:hover{
+    color: #FF0040;
+    text-shadow: 0px 0px 5px #fff;
+}
+
+table {     
+    font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+    font-size: 12px;    
+    margin: 45px;     
+    width: 480px; 
+    text-align: left;    
+    border-collapse: collapse; 
+}
+
+th {    
+    font-size: 13px;     
+    font-weight: normal;     
+    padding: 8px;     
+    background: #b9c9fe;
+    border-top: 4px solid #aabcfe;    
+    border-bottom: 1px solid #fff; 
+    color: #039; 
+}
+
+td {    
+    padding: 8px;     
+    background: #e8edff;     
+    border-bottom: 1px solid #fff;
+    color: #669;    
+    border-top: 1px solid transparent; }
+
+tr:hover td { 
+    background: #d0dafd; 
+    color: #339; 
+}
+
+.btnAlquilar {
+   
+        background: #799fb8;
+        background-image: -webkit-linear-gradient(top, #799fb8, #3e0fd6);
+        background-image: -moz-linear-gradient(top, #799fb8, #3e0fd6);
+        background-image: -ms-linear-gradient(top, #799fb8, #3e0fd6);
+        background-image: -o-linear-gradient(top, #799fb8, #3e0fd6);
+        background-image: linear-gradient(to bottom, #799fb8, #3e0fd6);
+        -webkit-border-radius: 32;
+        -moz-border-radius: 32;
+        border-radius: 32px;
+        -webkit-box-shadow: 5px 5px 9px #666666;
+        -moz-box-shadow: 5px 5px 9px #666666;
+        box-shadow: 5px 5px 9px #666666;
+        font-family: Arial;
+        color: #ffffff;
+        font-size: 20px;
+        padding: 10px;
+        border: solid #28eb6c 2px;
+        text-decoration: none;
+    
+}
+/*******************BOTON ALQUILER********************/
+.btnAlquilar:hover {
+    background: #3cfc7f;
+    background-image: -webkit-linear-gradient(top, #3cfc7f, #3498db);
+    background-image: -moz-linear-gradient(top, #3cfc7f, #3498db);
+    background-image: -ms-linear-gradient(top, #3cfc7f, #3498db);
+    background-image: -o-linear-gradient(top, #3cfc7f, #3498db);
+    background-image: linear-gradient(to bottom, #3cfc7f, #3498db);
+    text-decoration: none;
+
+}
+
+h1{
+    font-family: 'Bevan', serif;
+    color: rgba(0, 168, 255, 0.5);
+    text-shadow: 3px 3px 0 rgba(255, 0, 180, 0.5);
+}
+
+caption {
+    font-weight: bold;
+    text-align: center;
+    background-color: rgba(255, 253, 252, 0.5);
+    color: #1E31D9;
+    font-family: Verdana,Geneva,sans-serif;
+    font-size: 23.0px;
+    line-height: 227%;
+    text-shadow: 4.5px -4.5px 8.5px rgba(125,17,32,0.7);
+}
+
+.footer p{
+    padding: 20px;
+    font-size: 20px;
+    color: #fff;
+    background-color:#2cab18;
+    background-image: -moz-linear-gradient(bottom , #2cab18, #1e76e8 46px,#2873b5 15px);
+    background-image: -webkit-linear-gradient(bottom , #2cab18, #1e76e8 46px,#2873b5 15px);
+    background-image: -o-linear-gradient(bottom , #2cab18, #1e76e8 46px,#2873b5 15px);
+    background-image: -ms-linear-gradient(bottom , #2cab18, #1e76e8 46px,#2873b5 15px);
+    background-image: linear-gradient(bottom , #2cab18, #1e76e8 46px,#2873b5 15px);
+}
+.footer a{
+
+    text-decoration: none;
+    color: #D7DF01;
+    font-weight: bold;
+    text-shadow: 0px 0px 0.5px #fff
+
+}
+.footer a:hover{
+    color: #FF0040;
+    text-shadow: 0px 0px 5px #fff;
+
+}
+#img1{
+    -moz-transform: scale(1) rotate(20deg) translateX(20px) skewX(10deg);
+    -webkit-transform: scale(1) rotate(20deg) translateX(20px) skewX(10deg);
+    -o-transform: scale(1) rotate(20deg) translateX(20px) skewX(10deg);
+    -ms-transform: scale(1) rotate(20deg) translateX(20px) skewX(10deg);
+    transform: scale(1) rotate(20deg) translateX(20px) skewX(10deg);
+}
+
+header{
+    box-shadow: 0px 0px 10px 10px rgba(149, 13, 61, 0.75);
+    -moz-box-shadow: 0px 0px 10px 10px rgba(149, 13, 61, 0.75);
+    -webkit-box-shadow: 0px 0px 10px 10px rgba(149, 13, 61, 0.75);
+}
+
+/* ---------------------- Blueslate nav ---------------------- */
+#tabs25{position:relative;display:block;height:42px;font-size:11px;font-weight:bold;background:transparent url(images/blueslate_background.gif) repeat-x top left;font-family:Arial,Verdana,Helvitica,sans-serif;text-transform:uppercase;}
+/* ---------------------- END Blueslate nav ---------------------- */
