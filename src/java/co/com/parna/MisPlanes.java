@@ -12,26 +12,26 @@ import java.util.ArrayList;
  *
  * @author Administrador
  */
-public class MiCatalogo implements Serializable{
+public class MisPlanes implements Serializable{
    
-    private ArrayList<Catalogo> misProductos = new ArrayList<Catalogo>();
+    private ArrayList<Plan> misProductos = new ArrayList<Plan>();
     
-    public MiCatalogo(){
+    public MisPlanes(){
     }
 
-    public ArrayList<Catalogo> getMisProductos() {
+    public ArrayList<Plan> getMisProductos() {
         return misProductos;
     }
 
-    public void setMisProductos(ArrayList<Catalogo> misProductos) {
+    public void setMisProductos(ArrayList<Plan> misProductos) {
         this.misProductos = misProductos;
     }
     
-    public void agregarProducto(Catalogo catalogo){
+    public void agregarPlan(Plan catalogo){
         misProductos.add(catalogo);
     }
     
-    public void removerProducto(Catalogo catalogo){
+    public void removerProducto(Plan catalogo){
         misProductos.remove(catalogo);
     }
 }

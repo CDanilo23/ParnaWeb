@@ -6,8 +6,6 @@ package co.com.parna;
  * and open the template in the editor.
  */
 
-import co.com.parna.Catalogo;
-import co.com.parna.MiCatalogo;
 import java.beans.*;
 import java.io.Serializable;
 import java.sql.Connection;
@@ -54,21 +52,26 @@ public class MiConexion implements Serializable {
         propertySupport.removePropertyChangeListener(listener);
     }
     
-    public MiCatalogo consultarDatos() {
-         MiCatalogo micatalogo = new MiCatalogo();
+    public MisPlanes consultarDatos() {
+         MisPlanes misPlanes = new MisPlanes();
         try {
             Class.forName("org.apache.derby.jdbc.EmbeddedDriver");
-            Connection conexion = (Connection) DriverManager.getConnection("jdbc:derby://localhost:1527/MiSitioPlusDB", "root", "123456");
+            Connection conexion = (Connection) DriverManager.getConnection("jdbc:derby://localhost:1527/ParnaDB", "root", "123456");
             st = conexion.createStatement();
-            ResultSet result = st.executeQuery("select * from ROOT.CATALOGO ");
+            ResultSet result = st.executeQuery("select * from ROOT.PLAN ");
             
             while(result.next()){
-                Catalogo catalogo = new Catalogo();
-                catalogo.setId(result.getInt(1));
-                catalogo.setNombre(result.getString(2));
-                catalogo.setPrecio(result.getDouble(3));
-                catalogo.setImagen(result.getString(4));
-                micatalogo.agregarProducto(catalogo);
+                Plan plan = new Plan();
+                plan.setId(result.getInt(1));
+                plan.setImagenParque(result.getString(2));
+                plan.setCostoTempAltaAdultos(result.getDouble(3));
+                plan.setCostoTempBajaAdultos(result.getDouble(4));
+                plan.setCostoTempAltaNiños(result.getDouble(5));
+                plan.setCostoTempBajaNiños(result.getDouble(6));
+                plan.setHorario(result.getString(7));
+                plan.setImagenMapa(result.getString(8));
+                plan.setNombre(result.getString(9));
+                misPlanes.agregarPlan(plan);
             }
         } catch (ClassNotFoundException ex){
               Logger.getLogger(MiConexion.class.getName()).log(Level.SEVERE, null, ex);
@@ -76,7 +79,7 @@ public class MiConexion implements Serializable {
           catch( SQLException ex) {
             Logger.getLogger(MiConexion.class.getName()).log(Level.SEVERE, null, ex);
         }
-        return micatalogo;
+        return misPlanes;
     }
 
 }
