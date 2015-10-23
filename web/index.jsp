@@ -58,7 +58,7 @@
                             <th>Costo plan temporada baja adultos</th>
                             <th>Costo plan temporada alta niños</th>
                             <th>Costo plan temporada baja niños</th>
-                            <th>Costo plan temporada baja niños</th>
+                            <th>Horario</th>
                             <th>Mapa del del parque</th>
                             <th></th>
                         </tr>
@@ -77,7 +77,16 @@
                                 out.println("<td>" + plan.getCostoTempBajaNiños() + "</td>");
                                 out.println("<td>" + plan.getHorario() + "</td>");
                                 out.println("<td><img src='img/" + plan.getImagenMapa() + "'></img></td>");
-                                out.println("<td><a href ='datos.jsp?id=" + plan.getId() + "&nombre=" + plan.getNombre() + "&precio=" + plan.getImagenParque() + "&imagen=" + plan.getImagenParque() + "'><img src='img/carrito.png'></img></a></td>");
+                                out.println("<td><a href ='datos.jsp?id=" + plan.getId() 
+                                                            + "&nombre=" + plan.getNombre()
+                                                            + "&imgParque=" + plan.getImagenParque()
+                                                            + "&costo1=" + plan.getCostoTempAltaAdultos()
+                                                            + "&costo2=" + plan.getCostoTempBajaAdultos()
+                                                            + "&costo3=" + plan.getCostoTempAltaNiños()
+                                                            + "&costo4=" + plan.getCostoTempBajaNiños()
+                                                            + "&horario=" + plan.getHorario()
+                                                            + "&imgMapa=" + plan.getImagenMapa()
+                                                            + "'><img src='img/carrito.png'></img></a></td>");
                                 out.println("</tr>");
                             }
                         %>
